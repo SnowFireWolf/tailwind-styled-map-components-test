@@ -1,3 +1,3 @@
-# test-tailwind-styled-map-components
+# dipper-frontend-app
 
-This is test tailwind-styled-map 
+This is My Dipper App
