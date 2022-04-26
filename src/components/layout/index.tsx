@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'tailwind-styled-map';
 
+import MobileNav from './MobileNav';
+
 
 
 const Box = styled('div');
@@ -44,6 +46,8 @@ export default function BaseLayout({ ...props }) {
       <main>
         {props.children}
       </main>
+
+      <MobileNav />
     </React.Fragment>
   );
 }
