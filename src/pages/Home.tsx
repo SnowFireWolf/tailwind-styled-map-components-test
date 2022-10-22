@@ -4,13 +4,6 @@ import logo from '@/assets/logo.svg'
 
 import styled from 'tailwind-styled-map';
 import Button from '@/components/system/Button';
-// import TestButton from '@/components/system/TestButton';
-
-
-// const Container = styled('div', [
-//   'mt-5',
-//   'flex',
-// ]);
 
 
 
@@ -32,6 +25,8 @@ export default function HomePage() {
 
 
   const viewSxProps = [
+    'max-w-sm',
+    'mx-auto',
     'bg-blue-500',
     'text-white',
     'rounded',
@@ -63,16 +58,17 @@ export default function HomePage() {
       <Button
         sx={[
           'mt-5',
+          'mx-auto',
           'p-3',
           'mb-5',
         ]}
         type="button"
         onClick={() => handleToggle()}
       >
-        Toggle
+        Toggle Card
       </Button>
 
-      <Box sx={showContet ? viewSxProps : hideSxProps}>測試內容</Box>
+      <Box sx={showContet ? viewSxProps : hideSxProps}>Card is Opened</Box>
 
       <Box>
         <Image sx={'w-1/4 mx-auto'} src={logo} alt="logo" />
@@ -99,7 +95,7 @@ export default function HomePage() {
 
       <Box sx="mt-10 text-center">
         <Box as="p">
-          Edit <code>./src/pages/Home.jsx</code> and save to test HMR updates.
+          Edit <code>./src/pages/Home.tsx</code> and save to test HMR updates.
         </Box>
 
         <a

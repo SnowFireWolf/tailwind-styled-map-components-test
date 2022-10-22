@@ -47,7 +47,7 @@ export default function BaseLayout({ ...props }) {
         {props.children}
       </main>
 
-      <MobileNav />
+      {/* <MobileNav /> */}
     </React.Fragment>
   );
 }
